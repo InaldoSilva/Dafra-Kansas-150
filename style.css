@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.cabecalho {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navegacao {
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao ul {
+    list-style: none;
+    display: flex;
+}
+
+.navegacao ul li {
+    margin: 0 15px;
+}
+
+.navegacao ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    &:hover {
+        background-color: #777;
+        border-radius: 4px;
+        transition: ease-in-out 0.6s;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container h1 {
+    margin: 2rem;
+}
+
+.container-carrossel {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-carrossel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sobre {
+    margin-top: 2rem;
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.pecas {
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.tabela_de_pecas {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.rodape {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.rodape-menu {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.rodape-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.rodape-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    &:hover {
+        text-decoration: underline;
+        transition: ease-in-out 0.6s;
+    }
+}   
+
+/* Media query */
+@media (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navegacao {
+        flex-direction: row;
+    }
+
+    .navegacao ul {
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navegacao ul li {
+        margin: 1rem auto;
+    }
+
+    .navegacao ul li a {
+        padding: 10px;
+    }
+
+    .sobre, .pecas {
+        width: 90%;
+        margin: 3rem auto;
+    }
+
+    .tabela_de_pecas {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
