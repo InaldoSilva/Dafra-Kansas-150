@@ -14,7 +14,16 @@ body {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
+    display: flex;
+}
+
+#logo{
+    height: 80px;
+    margin: 0 10px;
+    border-radius: 50%;
 }
 
 .navegacao {
@@ -45,7 +54,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 85%;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -75,11 +84,43 @@ body {
     margin: 1rem auto;
 }
 
-.pecas {
-    margin-top: 20px;
+.banner {
+    width: 85%;
     text-align: center;
-    width: 80%;
+    margin: 2rem auto;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}   
+
+.banner a {
+    display: block;
+    margin-top: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    &:hover {
+        color: #007bff;
+        text-decoration: none;
+        transition: ease-in-out 0.6s;
+    }
+}
+
+.pecas {
+    background-color: #333;
+    color: #fff;
+    margin-top: 1rem;
+    text-align: center;
+    width: 85%;
+    height: 7rem;
     margin: 1rem auto;
+}
+
+.pecas h2 {
+    padding-top: 1rem;
 }
 
 .tabela_de_pecas {
@@ -145,6 +186,10 @@ tr:nth-child(even) {
         margin: 0 auto;
     }
 
+    #logo {
+        height: 60px;
+    }
+
     .navegacao {
         flex-direction: row;
     }
@@ -165,8 +210,11 @@ tr:nth-child(even) {
     }
 
     .sobre, .pecas {
-        width: 90%;
+        width: 85%;
+        height: auto;
         margin: 3rem auto;
+        font-size: 14px;
+        border-radius: 8px;
     }
 
     .tabela_de_pecas {
