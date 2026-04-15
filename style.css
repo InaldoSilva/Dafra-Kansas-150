@@ -27,6 +27,8 @@ body {
 }
 
 .navegacao {
+    position: sticky;
+    top: 0;
     background-color: #555;
     display: flex;
     justify-content: center;
@@ -182,7 +184,7 @@ tr:nth-child(even) {
 @media (max-width: 768px) {
 
     .container {
-        width: 90%;
+        width: 96%;
         margin: 0 auto;
     }
 
@@ -223,5 +225,11 @@ tr:nth-child(even) {
 
     table {
         font-size: 12px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
     }
 }
